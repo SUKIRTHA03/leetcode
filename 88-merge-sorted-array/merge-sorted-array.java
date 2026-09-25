@@ -10,7 +10,7 @@ class Solution {
             }
             else if(nums1[i]>nums2[j]){
                 nums1[k]=nums1[i];
-                i--;
+                i--;               
             }
             else{
                 nums1[k]=nums2[j];
@@ -18,5 +18,6 @@ class Solution {
             }
             k--;
         }
+    
     }
 }
