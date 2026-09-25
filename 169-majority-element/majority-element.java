@@ -3,6 +3,7 @@ class Solution {
         int n=nums.length;
         int a=n/2;
         int i=0;
+        int ans=0;
         for( i=0;i<n;i++){
             int count=1;
             for(int j=i+1;j<n;j++){
@@ -11,10 +12,11 @@ class Solution {
                 }
             }
             if(count>a){
-                return nums[i];
+                ans=nums[i];
+                break;
             }
         }
-        return nums[i-1];
+        return ans;
     }
 }
 // class Solution {
